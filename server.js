@@ -42,7 +42,7 @@ const sendEmail = async (to, subject, text, html) => {
 
 
 app.get("/", async (req, res)=>{
-  return res.json("running")
+  return res.json("hello")
 })
 
 // Endpoint to trigger email sending
