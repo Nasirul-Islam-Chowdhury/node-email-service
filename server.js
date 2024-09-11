@@ -25,7 +25,7 @@ const transporter = nodemailer.createTransport({
 // Function to send email
 const sendEmail = async (to, subject, text, html) => {
   const mailOptions = {
-    from: '"Support Team" <support@xclusivelabels.com>',
+    from: '"Support Team" <pwz2k@purelymail.com>',
     to,
     subject,
     text,
