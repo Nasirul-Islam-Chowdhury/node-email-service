@@ -41,9 +41,9 @@ const sendEmail = async (to, subject, text, html) => {
 };
 
 
-app.get("/", async (req, res)=>{
-  return res.json("hello")
-})
+app.get('*', (req, res) => {
+  res.send('Hello from Node.js server!');
+});
 
 // Endpoint to trigger email sending
 app.post("/send-email", async (req, res) => {
@@ -65,3 +65,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+
+module.exports = app
